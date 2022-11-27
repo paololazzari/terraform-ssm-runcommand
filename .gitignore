@@ -1,0 +1,22 @@
+# Terraform files
+.terraform
+terraform.tfstate
+terraform.tfvars
+*.tfstate*
+.terraform.lock.hcl
+
+examples/amazon-linux-instance-with-iam-role/.terraform
+examples/amazon-linux-instance-with-iam-role/terraform.tfstate
+examples/amazon-linux-instance-with-iam-role/terraform.tfvars
+examples/amazon-linux-instance-with-iam-role/*.tfstate*
+examples/amazon-linux-instance-with-iam-role/*.log
+
+examples/amazon-windows-instance-with-iam-role/.terraform
+examples/amazon-windows-instance-with-iam-role/terraform.tfstate
+examples/amazon-windows-instance-with-iam-role/terraform.tfvars
+examples/amazon-windows-instance-with-iam-role/*.tfstate*
+examples/amazon-windows-instance-with-iam-role/*.log
+
+# Ignore CLI config files
+.terraformrc
+terraform.rc
