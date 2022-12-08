@@ -15,6 +15,7 @@ module "ssm_runcommand_windows" {
   instance_id                 = "i-..."
   target_os                   = "windows"
   command                     = "Get-Process -name 'amazon*'"
+  wait_for_command_completion = true
 }
 ```
 
@@ -24,6 +25,7 @@ module "ssm_runcommand_unix" {
   instance_id                 = "i-..."
   target_os                   = "unix"
   command                     = "ps -ax | grep 'amazon*'"
+  wait_for_command_completion = true
 }
 ```
 
